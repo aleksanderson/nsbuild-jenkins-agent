@@ -1,0 +1,7 @@
+{
+  "name": "patch_pom",
+  "version": "1.0.0",
+  "dependencies": {
+    "xml2js": "0.4.19"
+  }
+}
