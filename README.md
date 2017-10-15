@@ -1,7 +1,7 @@
 nsbuild-jenkins-agent
 =====================
 
-Jenkins Build Agent based on Docker container with all nesessary dependencies and tools which represents a complete environment for building and deploying [NetSuite](http://www.netsuite.com/) projects. 
+Jenkins Build Agent based on Docker container with all nesessary dependencies and tools which represent a complete environment for building and deploying [NetSuite](http://www.netsuite.com/) projects. 
 
 Current Docker image supports the following NetSuite project types:
 * SDF (SuiteCloud Development Framework) projects
@@ -24,6 +24,7 @@ Installation
 ![](https://d1ro8r1rbfn3jf.cloudfront.net/ms_107835/klJBuxrcnriYFiPWu25Ignunc9W3ge/Configure%2BSystem%2B%255BJenkins%255D%2B2017-10-15%2B22-30-19.png?Expires=1508182235&Signature=Nm0uuQxWY75IGK1MrX692V0eNEg8RdgLuVNk7660hAeZ2TKQGdV2h0Rk~cpivHfeSKks91RLz9saEU7kuYM0jpXXF5jFnmdKx5HlxxV~C7Gn7SgePe2z~1v0imyxRrkp32eJZGUsGU4f-U4SrKLxDe5OMSXR09O8-ZV3Xg1hr~Y~Vs2vxr3UCC9brDiS1Ne2b6R1WuWW4AlSqJW6H0QLwGM73vfMfnh49OcptYGDTWdcXsXKtBDsroZR4H29lak6x5hkdWKVynPuGFIO~mwEyTIfzaebLHBVXxB~LoUTjD2GSgdqXOSFtaCodh2dil3nxwCrKgCm8zUGBo7UhI6sAA__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA)
 
 NOTE:
+* ```Docker Image``` - will pull the **aleksanderson/nsbuild-jenkins-agent** built images from the Docker Hub
 * ```Labels``` value will be used as a marker for a particular job to be run only on a specific agent
 * The following configuration is required for ```Container settings...```
   * JENKINS_SLAVE_SSH_PUBKEY=[SSH public key]
