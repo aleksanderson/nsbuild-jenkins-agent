@@ -26,12 +26,13 @@ Installation
 NOTE:
 * ```Labels``` value will be used as a marker for a particular job to be run only on a specific agent
 * The following configuration is required for ```Container settings...```
-  * JENKINS_SLAVE_SSH_PUBKEY=<SSH public key>  
+  * JENKINS_SLAVE_SSH_PUBKEY=[SSH public key]
 
 5. Configure a Jenkins build job:
 * In [Build job] -> Configuration
   * Configure build to be run on a specific build agent![](https://d1ro8r1rbfn3jf.cloudfront.net/ms_107835/kLIlALItOgEYmHAGd3PizpzDsCIfJg/NS%2BBuild%2B-%2BDocker%2BAgent%2BConfig%2B%255BJenkins%255D%2B2017-10-15%2B22-41-16.png?Expires=1508182889&Signature=WW-ps8HrDu3znJ0o9NY5tSdvV29W77lhuj~kKxNV6x5yNXGo5LbH6jzcUaT6ZN3~cnYnN4lSgIkwlXtfrc8BNpD-ayRk5m9z1sULaAM0NY94pq7YhFJOjXoJHrBffQ-2hTYGMwEtETCoO~wklhcP--sWRWoXmQcEMZ8o2TEhhTYUvNxtEOMAFtYi1NAIBLZmxCcccbk6mBqnrwXQQk0phz3bpvS~EoiBtUNdwfG0oOMSGVDRNaGz~gDBLLa3EfuVm~~5SH~4UifjXuzLWF4mI65yL2cYdlo8nVXuW1H1NQDKIEI7rDeEC237qB4vUyaSi8Y~1mCteQI9BBjwT6Jgeg__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA)
-  * Reference nesessary tools from shell build steps. For example: 
+  * Reference nesessary tools from shell build steps. 
+  For example: 
   ```echo "$NS_ENV_PASSWORD" | sdfcli validate```
 
 
