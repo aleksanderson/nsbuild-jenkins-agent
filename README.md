@@ -1,7 +1,7 @@
 nsbuild-jenkins-agent
 =====================
 
-Jenkins Build Agent based on Docker container with all nesessary dependencies and tools which represent a complete environment for building and deploying [NetSuite](http://www.netsuite.com/) projects. 
+Jenkins Build Agent based on Docker with all nesessary dependencies and tools which represent a complete environment for building and deploying [NetSuite](http://www.netsuite.com/) projects. 
 
 Current Docker image supports the following NetSuite project types:
 * SDF (SuiteCloud Development Framework) projects
