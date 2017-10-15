@@ -9,5 +9,10 @@ Jenkins Build Agent for specific NetSuite project builds
 
 Container contains the following packages installed:
 * Node.js v6.*
+* Npm
 * Gulp
 * SDF CLI
+
+TODO
+----
+* Use alpine based image to optimize the size
