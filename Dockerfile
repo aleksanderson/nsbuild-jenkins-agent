@@ -4,12 +4,22 @@
 
 FROM jenkinsci/ssh-slave
 
-# Installing Maven
+# Installing core dependencies
 RUN apt-get update && apt-get install -y \
+    build-essential checkinstall \
+    libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev \
     maven \
     && apt-get clean \
     # TMP to fix java slave issue
     && ln -s "$JAVA_HOME/jre/bin/java" /usr/local/bin/java
+
+# Installing Python 2.7
+RUN cd /usr/src && \
+    wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz && \
+    tar xzf Python-2.7.13.tgz && \
+    cd Python-2.7.13 && \
+    ./configure && \
+    make altinstall
 
 # Installing Node.js
 ARG NODE_VERSION=6.x
