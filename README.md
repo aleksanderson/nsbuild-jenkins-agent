@@ -27,7 +27,7 @@ NOTE:
 * ```Docker Image``` - will pull the **aleksanderson/nsbuild-jenkins-agent** built images from the Docker Hub
 * ```Labels``` value will be used as a marker for a particular job to be run only on a specific agent
 * The following configuration is required for ```Container settings...```
-  * JENKINS_SLAVE_SSH_PUBKEY=[SSH public key]
+  * Environment: JENKINS_SLAVE_SSH_PUBKEY=[SSH public key]
 
 5. Configure a Jenkins build job:
 * In [Build job] -> Configuration
